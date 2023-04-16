@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 100vh;
+  background: url('./bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* calculator  */
+.calculator {
+  width: 350px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 9px 8px 18px 8px rgba(145, 145, 145, 0.75);
+
+  /* padding: 3px; */
+  background-color: #000;
+}
+
+/* --------header-------- */
+header {
+  width: 100%;
+  height: 30%;
+  background-color: #19376d;
+  color: #fff;
+  padding: 12px;
+}
+
+header .container-header {
+  border-bottom: 0.5 solid;
+}
+
+.container-header button {
+  margin-bottom: 10px;
+  /* margin: 6px; */
+  border: none;
+
+  /* font-size: 18px; */
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+}
+
+.container-header button::before {
+  content: '';
+  display: inline-block;
+}
+
+.container-header #close {
+  background-color: red;
+}
+
+.container-header #hide {
+  background-color: orange;
+}
+.container-header #fullscreen {
+  background-color: lightgreen;
+}
+
+header .container-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 34px;
+  height: 80%;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+}
+
+/* --------section-------- */
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  height: 70%;
+  padding: 8px;
+}
+
+.color1 {
+  background: #a5d7e8;
+  /* color: #fff; */
+}
+.color2 {
+  background: #a5d7e8;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  gap: 5px;
+}
+
+.double.btn {
+  flex: 0 0 calc(50% - 2.5px);
+}
+
+.btn {
+  height: 100%;
+  flex: 1 1 0;
+  font-size: 18px;
+  /* border: none; */
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  border-color: black;
+}
